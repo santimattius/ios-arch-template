@@ -25,6 +25,7 @@
 		4BE2BD4A274AF66600996C66 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2BD49274AF66600996C66 /* NetworkError.swift */; };
 		4BE2BD4C274AF93B00996C66 /* Service+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2BD4B274AF93B00996C66 /* Service+URL.swift */; };
 		4BE2BD4E274AFA8000996C66 /* Service+Pictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2BD4D274AFA8000996C66 /* Service+Pictures.swift */; };
+		4BE2BD51274B1C9300996C66 /* DependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2BD50274B1C9300996C66 /* DependencyProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		4BE2BD49274AF66600996C66 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		4BE2BD4B274AF93B00996C66 /* Service+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service+URL.swift"; sourceTree = "<group>"; };
 		4BE2BD4D274AFA8000996C66 /* Service+Pictures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service+Pictures.swift"; sourceTree = "<group>"; };
+		4BE2BD50274B1C9300996C66 /* DependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		4BE2BD1B274AEC8000996C66 /* ios-arch-template */ = {
 			isa = PBXGroup;
 			children = (
+				4BE2BD4F274B1C7F00996C66 /* DI */,
 				4BE2BD2D274AED6400996C66 /* Core */,
 				4BE2BD2C274AED4900996C66 /* Infrastructure */,
 				4BE2BD2B274AED3C00996C66 /* Domain */,
@@ -181,6 +184,14 @@
 			path = Datasources;
 			sourceTree = "<group>";
 		};
+		4BE2BD4F274B1C7F00996C66 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				4BE2BD50274B1C9300996C66 /* DependencyProvider.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -262,6 +273,7 @@
 				4BE2BD46274AF5FD00996C66 /* NativeApliClient.swift in Sources */,
 				4BE2BD37274AF17800996C66 /* PicturesRepository.swift in Sources */,
 				4BE2BD1D274AEC8000996C66 /* ios_arch_templateApp.swift in Sources */,
+				4BE2BD51274B1C9300996C66 /* DependencyProvider.swift in Sources */,
 				4BE2BD39274AF1D000996C66 /* Picture.swift in Sources */,
 				4BE2BD4E274AFA8000996C66 /* Service+Pictures.swift in Sources */,
 				4BE2BD33274AEFA800996C66 /* PictureUiModel.swift in Sources */,

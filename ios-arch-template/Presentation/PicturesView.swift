@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct PicturesView: View {
+    
+    @ObservedObject var viewModel: PictureViewModel
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(viewModel.pictures){ picture in
+            Text(picture.author)
+        }
     }
 }
 
-struct PicturesView_Previews: PreviewProvider {
-    static var previews: some View {
-        PicturesView()
-    }
-}
+//struct PicturesView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PicturesView()
+//    }
+//}

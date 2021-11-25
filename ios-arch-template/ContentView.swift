@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let viewModel = DependencyProvider.shared.providePictureViewModel()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        PicturesView(viewModel: viewModel)
     }
 }
 

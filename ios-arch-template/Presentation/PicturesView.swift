@@ -10,16 +10,27 @@ import SwiftUI
 struct PicturesView: View {
     
     @ObservedObject var viewModel: PictureViewModel
-
+    @State var selectedPicture: PictureUiModel?
+    
     var body: some View {
-        List(viewModel.pictures){ picture in
-            Text(picture.author)
+        NavigationView{
+            List(viewModel.pictures){ picture in
+                PictureItemView(
+                    picture:picture
+                )
+                .listRowSeparator(.hidden)
+                .onTapGesture {
+                    self.selectedPicture = picture
+                }
+            }
+            .listStyle(PlainListStyle())
+            .onAppear{
+                viewModel.loadPictures()
+            }
+            .navigationTitle("iOS Arch Template")
+            .sheet(item: self.$selectedPicture) { picture in
+                SafariView(url:URL(string: picture.link)!)
+            }
         }
     }
 }
-
-//struct PicturesView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        PicturesView()
-//    }
-//}

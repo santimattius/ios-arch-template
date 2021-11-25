@@ -8,9 +8,11 @@
 import Foundation
 import Combine
 
-class PictureViewModel:ObservableObject{
+final class PictureViewModel:ObservableObject{
     
     @Published public var pictures:[PictureUiModel] = []
+    
+    private var loaded = false
     
     private let repository: PicturesRepository
     
@@ -21,9 +23,13 @@ class PictureViewModel:ObservableObject{
     func loadPictures(){
         Task.init {
             let result = await repository.getPictures()
-            self.pictures =  result.map{ item in
-                 PictureUiModel(author: item.author, imageUrl: item.url, link: item.downloadUrl)
+            if !self.loaded {
+                self.pictures =  result.map{ item in
+                     PictureUiModel(author: item.author, imageUrl: item.downloadUrl, link: item.url)
+                }
+                self.loaded = true
             }
+            
         }
         
     }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B37558A274EED9300A0A248 /* PictureItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B375589274EED9300A0A248 /* PictureItemView.swift */; };
+		4B37558E274F05FC00A0A248 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B37558D274F05FC00A0A248 /* SafariView.swift */; };
 		4BE2BD1D274AEC8000996C66 /* ios_arch_templateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2BD1C274AEC8000996C66 /* ios_arch_templateApp.swift */; };
 		4BE2BD1F274AEC8000996C66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2BD1E274AEC8000996C66 /* ContentView.swift */; };
 		4BE2BD21274AEC8900996C66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BE2BD20274AEC8900996C66 /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B375589274EED9300A0A248 /* PictureItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureItemView.swift; sourceTree = "<group>"; };
+		4B37558D274F05FC00A0A248 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		4BE2BD19274AEC8000996C66 /* ios-arch-template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-arch-template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE2BD1C274AEC8000996C66 /* ios_arch_templateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_arch_templateApp.swift; sourceTree = "<group>"; };
 		4BE2BD1E274AEC8000996C66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 				4BE2BD2E274AEF7700996C66 /* PicturesView.swift */,
 				4BE2BD30274AEF8B00996C66 /* PicturesViewModel.swift */,
 				4BE2BD32274AEFA800996C66 /* PictureUiModel.swift */,
+				4B375589274EED9300A0A248 /* PictureItemView.swift */,
+				4B37558D274F05FC00A0A248 /* SafariView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -266,6 +272,7 @@
 				4BE2BD4A274AF66600996C66 /* NetworkError.swift in Sources */,
 				4BE2BD48274AF63300996C66 /* Service.swift in Sources */,
 				4BE2BD3E274AF34A00996C66 /* PicturesRepositoryImpl.swift in Sources */,
+				4B37558E274F05FC00A0A248 /* SafariView.swift in Sources */,
 				4BE2BD40274AF42A00996C66 /* PicturesDataSource.swift in Sources */,
 				4BE2BD1F274AEC8000996C66 /* ContentView.swift in Sources */,
 				4BE2BD31274AEF8B00996C66 /* PicturesViewModel.swift in Sources */,
@@ -278,6 +285,7 @@
 				4BE2BD4E274AFA8000996C66 /* Service+Pictures.swift in Sources */,
 				4BE2BD33274AEFA800996C66 /* PictureUiModel.swift in Sources */,
 				4BE2BD42274AF50A00996C66 /* PictureModel.swift in Sources */,
+				4B37558A274EED9300A0A248 /* PictureItemView.swift in Sources */,
 				4BE2BD2F274AEF7700996C66 /* PicturesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

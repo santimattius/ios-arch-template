@@ -13,9 +13,9 @@ protocol PicturesDataSource {
 }
 
 
-class PicturesRemoteDataSource: PicturesDataSource {
+final class PicturesRemoteDataSource: PicturesDataSource {
     
-    let client: ApiClient
+    private let client: ApiClient
     
     init(client: ApiClient) {
         self.client = client
@@ -23,11 +23,10 @@ class PicturesRemoteDataSource: PicturesDataSource {
     
     func fetchPictures() async -> PicturesResponse {
         let service = Service.pictures
-        
-        do{
+        do {
             let data = try await client.get(type: PicturesResponse.self, url: service.url, headers: service.headers)
             return data
-        }catch {
+        } catch {
             return []
         }
     }

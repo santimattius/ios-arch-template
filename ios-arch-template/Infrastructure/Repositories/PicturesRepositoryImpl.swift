@@ -7,9 +7,9 @@
 
 import Foundation
 
-class PicturesRepositoryImpl: PicturesRepository{
+final class PicturesRepositoryImpl: PicturesRepository{
     
-    let dataSource: PicturesDataSource
+    private let dataSource: PicturesDataSource
     
     init(dataSource: PicturesDataSource){
         self.dataSource = dataSource

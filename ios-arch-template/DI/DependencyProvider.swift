@@ -17,15 +17,15 @@ final class DependencyProvider {
         return PictureViewModel(repository: providePictureRepository())
     }
     
-    func providePictureRepository()-> PicturesRepository{
+    private func providePictureRepository()-> PicturesRepository{
         return PicturesRepositoryImpl(dataSource: providePictureDataSource())
     }
     
-    func providePictureDataSource() -> PicturesDataSource{
+    private func providePictureDataSource() -> PicturesDataSource{
         return PicturesRemoteDataSource(client: provideApiClient())
     }
     
-    func provideApiClient() -> ApiClient{
+    private func provideApiClient() -> ApiClient{
         return NativeApiClient()
     }
     

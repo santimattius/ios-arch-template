@@ -14,9 +14,12 @@ final class DependencyProvider {
     private init(){}
     
     func providePictureViewModel() -> PictureViewModel {
-        return PictureViewModel(repository: providePictureRepository())
+        return PictureViewModel(getPictures: provideGetPictures())
     }
     
+    private func provideGetPictures() -> GetPictures{
+        return GetPictures(repository: providePictureRepository())
+    }
     private func providePictureRepository()-> PicturesRepository{
         return PicturesRepositoryImpl(dataSource: providePictureDataSource())
     }

@@ -28,6 +28,7 @@
 		4BE2BD4C274AF93B00996C66 /* Service+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2BD4B274AF93B00996C66 /* Service+URL.swift */; };
 		4BE2BD4E274AFA8000996C66 /* Service+Pictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2BD4D274AFA8000996C66 /* Service+Pictures.swift */; };
 		4BE2BD51274B1C9300996C66 /* DependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2BD50274B1C9300996C66 /* DependencyProvider.swift */; };
+		4BF9DDD52759B3E200D07B71 /* GetPictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF9DDD42759B3E200D07B71 /* GetPictures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		4BE2BD4B274AF93B00996C66 /* Service+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service+URL.swift"; sourceTree = "<group>"; };
 		4BE2BD4D274AFA8000996C66 /* Service+Pictures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service+Pictures.swift"; sourceTree = "<group>"; };
 		4BE2BD50274B1C9300996C66 /* DependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyProvider.swift; sourceTree = "<group>"; };
+		4BF9DDD42759B3E200D07B71 /* GetPictures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPictures.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +111,9 @@
 		4BE2BD2A274AED2200996C66 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				4BE2BD2E274AEF7700996C66 /* PicturesView.swift */,
-				4BE2BD30274AEF8B00996C66 /* PicturesViewModel.swift */,
-				4BE2BD32274AEFA800996C66 /* PictureUiModel.swift */,
-				4B375589274EED9300A0A248 /* PictureItemView.swift */,
-				4B37558D274F05FC00A0A248 /* SafariView.swift */,
+				4BF9DDD82759B55900D07B71 /* models */,
+				4BF9DDD72759B52C00D07B71 /* viewmodels */,
+				4BF9DDD62759B51900D07B71 /* views */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -121,6 +121,7 @@
 		4BE2BD2B274AED3C00996C66 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				4BF9DDD32759B3C400D07B71 /* Usecases */,
 				4BE2BD35274AF14F00996C66 /* Repositories */,
 				4BE2BD34274AF12700996C66 /* Entities */,
 			);
@@ -196,6 +197,40 @@
 				4BE2BD50274B1C9300996C66 /* DependencyProvider.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		4BF9DDD32759B3C400D07B71 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				4BF9DDD42759B3E200D07B71 /* GetPictures.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		4BF9DDD62759B51900D07B71 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				4BE2BD2E274AEF7700996C66 /* PicturesView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		4BF9DDD72759B52C00D07B71 /* viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+				4B37558D274F05FC00A0A248 /* SafariView.swift */,
+				4B375589274EED9300A0A248 /* PictureItemView.swift */,
+				4BE2BD30274AEF8B00996C66 /* PicturesViewModel.swift */,
+			);
+			path = viewmodels;
+			sourceTree = "<group>";
+		};
+		4BF9DDD82759B55900D07B71 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				4BE2BD32274AEFA800996C66 /* PictureUiModel.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +318,7 @@
 				4BE2BD51274B1C9300996C66 /* DependencyProvider.swift in Sources */,
 				4BE2BD39274AF1D000996C66 /* Picture.swift in Sources */,
 				4BE2BD4E274AFA8000996C66 /* Service+Pictures.swift in Sources */,
+				4BF9DDD52759B3E200D07B71 /* GetPictures.swift in Sources */,
 				4BE2BD33274AEFA800996C66 /* PictureUiModel.swift in Sources */,
 				4BE2BD42274AF50A00996C66 /* PictureModel.swift in Sources */,
 				4B37558A274EED9300A0A248 /* PictureItemView.swift in Sources */,

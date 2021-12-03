@@ -14,15 +14,15 @@ final class PictureViewModel:ObservableObject{
     
     private var loaded = false
     
-    private let repository: PicturesRepository
+    private let getPictures: GetPictures
     
-    init(repository: PicturesRepository){
-        self.repository = repository
+    init(getPictures:GetPictures){
+        self.getPictures = getPictures
     }
     
     func loadPictures(){
         Task.init {
-            let result = await repository.getPictures()
+            let result = await getPictures.invoke()
             if !self.loaded {
                 self.pictures =  result.map{ item in
                      PictureUiModel(author: item.author, imageUrl: item.downloadUrl, link: item.url)

@@ -1,6 +1,17 @@
 # iOS Arch Template
 This is a template to build an iOS application applying good practices and using a clean architecture, you will see that the code is super decoupled with external frameworks and even with the same iOS framework, this will help you to model your domain purely in Swift without generating external dependencies.
 
+## Application architecture
+
+<p align="center">
+  <img src="https://github.com/santimattius/ios-arch-template/blob/main/screenshots/clean-arch-diagram.png?raw=true" alt="General architecture"/>
+</p>
+
+## Project structure
+
+<p align="left">
+  <img src="https://github.com/santimattius/ios-arch-template/blob/main/screenshots/project-structure.png?raw=true" alt="Project structure"/>
+</p>
 
 ## References
 

@@ -10,7 +10,7 @@ import SwiftUI
 struct PicturesView: View {
     
     @ObservedObject var viewModel: PictureViewModel
-    @State var selectedPicture: PictureUiModel?
+    @State private var selectedPicture: PictureUiModel?
     
     var body: some View {
         NavigationView{

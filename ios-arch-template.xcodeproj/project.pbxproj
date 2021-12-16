@@ -210,6 +210,8 @@
 		4BF9DDD62759B51900D07B71 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				4B37558D274F05FC00A0A248 /* SafariView.swift */,
+				4B375589274EED9300A0A248 /* PictureItemView.swift */,
 				4BE2BD2E274AEF7700996C66 /* PicturesView.swift */,
 			);
 			path = views;
@@ -218,8 +220,6 @@
 		4BF9DDD72759B52C00D07B71 /* viewmodels */ = {
 			isa = PBXGroup;
 			children = (
-				4B37558D274F05FC00A0A248 /* SafariView.swift */,
-				4B375589274EED9300A0A248 /* PictureItemView.swift */,
 				4BE2BD30274AEF8B00996C66 /* PicturesViewModel.swift */,
 			);
 			path = viewmodels;

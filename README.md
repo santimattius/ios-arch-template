@@ -29,3 +29,6 @@ This is a template to build an iOS application applying good practices and using
   - https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html
 - **URLSession** : 
   - https://developer.apple.com/documentation/foundation/urlsession
+
+## Tools
+- [SwiftLint](https://github.com/realm/SwiftLint)

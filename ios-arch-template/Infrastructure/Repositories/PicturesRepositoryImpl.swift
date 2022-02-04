@@ -7,21 +7,20 @@
 
 import Foundation
 
-final class PicturesRepositoryImpl: PicturesRepository{
-    
+final class PicturesRepositoryImpl: PicturesRepository {
+
     private let dataSource: PicturesDataSource
-    
-    init(dataSource: PicturesDataSource){
+
+    init(dataSource: PicturesDataSource) {
         self.dataSource = dataSource
     }
-    
+
     func getPictures() async -> [Picture] {
         return await dataSource.fetchPictures().map({item in item.asDomain()})
     }
 }
 
 extension PictureModel {
-    
     func asDomain() -> Picture {
         return Picture(
             id: self.id,

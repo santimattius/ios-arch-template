@@ -8,13 +8,13 @@
 import Foundation
 
 final class GetPictures {
-    
+
     private let repository: PicturesRepository
-    
-    init(repository:PicturesRepository){
+
+    init(repository: PicturesRepository) {
         self.repository = repository
     }
-    
+
     func invoke() async -> [Picture] {
         return await repository.getPictures()
     }

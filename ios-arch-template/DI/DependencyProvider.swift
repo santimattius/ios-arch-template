@@ -8,28 +8,30 @@
 import Foundation
 
 final class DependencyProvider {
-    
+
     static let shared = DependencyProvider()
-    
-    private init(){}
-    
+
+    private init() {
+
+    }
+
     func providePictureViewModel() -> PictureViewModel {
         return PictureViewModel(getPictures: provideGetPictures())
     }
-    
-    private func provideGetPictures() -> GetPictures{
+
+    private func provideGetPictures() -> GetPictures {
         return GetPictures(repository: providePictureRepository())
     }
-    private func providePictureRepository()-> PicturesRepository{
+    private func providePictureRepository() -> PicturesRepository {
         return PicturesRepositoryImpl(dataSource: providePictureDataSource())
     }
-    
-    private func providePictureDataSource() -> PicturesDataSource{
+
+    private func providePictureDataSource() -> PicturesDataSource {
         return PicturesRemoteDataSource(client: provideApiClient())
     }
-    
-    private func provideApiClient() -> ApiClient{
+
+    private func provideApiClient() -> ApiClient {
         return NativeApiClient()
     }
-    
+
 }

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4B37558A274EED9300A0A248 /* PictureItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B375589274EED9300A0A248 /* PictureItemView.swift */; };
 		4B37558E274F05FC00A0A248 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B37558D274F05FC00A0A248 /* SafariView.swift */; };
-		4BE2BD1D274AEC8000996C66 /* ios_arch_templateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2BD1C274AEC8000996C66 /* ios_arch_templateApp.swift */; };
+		4BE2BD1D274AEC8000996C66 /* ArchTemplateApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2BD1C274AEC8000996C66 /* ArchTemplateApplication.swift */; };
 		4BE2BD1F274AEC8000996C66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2BD1E274AEC8000996C66 /* ContentView.swift */; };
 		4BE2BD21274AEC8900996C66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BE2BD20274AEC8900996C66 /* Assets.xcassets */; };
 		4BE2BD24274AEC8900996C66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BE2BD23274AEC8900996C66 /* Preview Assets.xcassets */; };
@@ -35,7 +35,7 @@
 		4B375589274EED9300A0A248 /* PictureItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureItemView.swift; sourceTree = "<group>"; };
 		4B37558D274F05FC00A0A248 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		4BE2BD19274AEC8000996C66 /* ios-arch-template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-arch-template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BE2BD1C274AEC8000996C66 /* ios_arch_templateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_arch_templateApp.swift; sourceTree = "<group>"; };
+		4BE2BD1C274AEC8000996C66 /* ArchTemplateApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchTemplateApplication.swift; sourceTree = "<group>"; };
 		4BE2BD1E274AEC8000996C66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4BE2BD20274AEC8900996C66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BE2BD23274AEC8900996C66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 				4BE2BD2C274AED4900996C66 /* Infrastructure */,
 				4BE2BD2B274AED3C00996C66 /* Domain */,
 				4BE2BD2A274AED2200996C66 /* Presentation */,
-				4BE2BD1C274AEC8000996C66 /* ios_arch_templateApp.swift */,
+				4BE2BD1C274AEC8000996C66 /* ArchTemplateApplication.swift */,
 				4BE2BD1E274AEC8000996C66 /* ContentView.swift */,
 				4BE2BD20274AEC8900996C66 /* Assets.xcassets */,
 				4BE2BD22274AEC8900996C66 /* Preview Content */,
@@ -243,6 +243,7 @@
 				4BE2BD15274AEC8000996C66 /* Sources */,
 				4BE2BD16274AEC8000996C66 /* Frameworks */,
 				4BE2BD17274AEC8000996C66 /* Resources */,
+				4BD9044827AC9F39005260B7 /* Run SwiftLint Script */,
 			);
 			buildRules = (
 			);
@@ -298,6 +299,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4BD9044827AC9F39005260B7 /* Run SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4BE2BD15274AEC8000996C66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -314,7 +336,7 @@
 				4BE2BD4C274AF93B00996C66 /* Service+URL.swift in Sources */,
 				4BE2BD46274AF5FD00996C66 /* NativeApliClient.swift in Sources */,
 				4BE2BD37274AF17800996C66 /* PicturesRepository.swift in Sources */,
-				4BE2BD1D274AEC8000996C66 /* ios_arch_templateApp.swift in Sources */,
+				4BE2BD1D274AEC8000996C66 /* ArchTemplateApplication.swift in Sources */,
 				4BE2BD51274B1C9300996C66 /* DependencyProvider.swift in Sources */,
 				4BE2BD39274AF1D000996C66 /* Picture.swift in Sources */,
 				4BE2BD4E274AFA8000996C66 /* Service+Pictures.swift in Sources */,

@@ -8,6 +8,6 @@
 import Foundation
 
 protocol PicturesRepository {
-    
+
     func getPictures() async -> [Picture]
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Picture{
+struct Picture {
     let id: String
     let author: String
     let url: String

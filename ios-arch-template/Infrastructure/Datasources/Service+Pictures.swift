@@ -7,10 +7,8 @@
 
 import Foundation
 
-
-
 extension Service {
-    
+
     static var pictures: Self {
         return Service(path: "/pictures")
     }

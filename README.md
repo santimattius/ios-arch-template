@@ -19,13 +19,11 @@ This is a template to build an iOS application applying good practices and using
 
 ## References
 
-- **SwiftUI**:
-  - https://developer.apple.com/xcode/swiftui/
-- **AsyncImage**: 
-  - https://developer.apple.com/documentation/swiftui/asyncimage
-- **Combine**: 
-  - https://developer.apple.com/documentation/combine
-- **Concurrency**: 
-  - https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html
-- **URLSession** : 
-  - https://developer.apple.com/documentation/foundation/urlsession
+- [SwiftUI](https://developer.apple.com/xcode/swiftui/)
+- [AsyncImage](https://developer.apple.com/documentation/swiftui/asyncimage)
+- [Combine](https://developer.apple.com/documentation/combine)
+- [Concurrency](https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html)
+- [URLSession](https://developer.apple.com/documentation/foundation/urlsession)
+
+## Tools
+- [SwiftLint](https://github.com/realm/SwiftLint)

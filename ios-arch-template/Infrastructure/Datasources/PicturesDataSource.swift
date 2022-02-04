@@ -8,19 +8,18 @@
 import Foundation
 
 protocol PicturesDataSource {
-    
+
     func fetchPictures() async -> PicturesResponse
 }
 
-
 final class PicturesRemoteDataSource: PicturesDataSource {
-    
+
     private let client: ApiClient
-    
+
     init(client: ApiClient) {
         self.client = client
     }
-    
+
     func fetchPictures() async -> PicturesResponse {
         let service = Service.pictures
         do {

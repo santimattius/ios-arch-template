@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct ios_arch_templateApp: App {
+struct ArchTemplateApplication: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

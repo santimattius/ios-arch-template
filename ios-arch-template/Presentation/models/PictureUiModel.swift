@@ -7,10 +7,9 @@
 
 import Foundation
 
-struct PictureUiModel: Identifiable{
+struct PictureUiModel: Identifiable {
     var id = UUID()
     var author: String
     var imageUrl: String
     var link: String
 }
-

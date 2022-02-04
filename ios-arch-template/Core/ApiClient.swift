@@ -9,9 +9,9 @@ import Foundation
 import Combine
 
 protocol ApiClient: AnyObject {
-    
+
     typealias Headers = [String: Any]
-    
-    func get<T>(type: T.Type, url: URL, headers: Headers) async throws -> T where T : Decodable
-    
+
+    func get<T>(type: T.Type, url: URL, headers: Headers) async throws -> T where T: Decodable
+
 }

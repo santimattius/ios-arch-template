@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct PicturesView: View {
-    
+
     @ObservedObject var viewModel: PictureViewModel
     @State private var selectedPicture: PictureUiModel?
-    
+
     var body: some View {
-        NavigationView{
-            List(viewModel.pictures){ picture in
+        NavigationView {
+            List(viewModel.pictures) { picture in
                 PictureItemView(
-                    picture:picture
+                    picture: picture
                 )
                 .listRowSeparator(.hidden)
                 .onTapGesture {
@@ -24,12 +24,12 @@ struct PicturesView: View {
                 }
             }
             .listStyle(PlainListStyle())
-            .onAppear{
+            .onAppear {
                 viewModel.loadPictures()
             }
             .navigationTitle("iOS Arch Template")
             .sheet(item: self.$selectedPicture) { picture in
-                SafariView(url:URL(string: picture.link)!)
+                SafariView(url: URL(string: picture.link)!)
             }
         }
     }

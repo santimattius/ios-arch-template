@@ -12,7 +12,7 @@ extension Service {
     var url: URL {
         var urlComponent = URLComponents()
         urlComponent.scheme = "https"
-        urlComponent.host = "pictures.getsandbox.com"
+        urlComponent.host = "api-picture.onrender.com"
         urlComponent.port = 443
         urlComponent.path = "" + path
         guard let url = urlComponent.url else {
